@@ -1,0 +1,95 @@
+:root {
+    --bg-white:  #FDFEFE;
+    --bg-lightwhite: #F0F3F4;
+    --bg-silver: #C0C0C0;
+    --bg-gray:  #808080;
+    --bg-letter: #312F2F;
+    --bg-blacki:#0f0f0f;
+    --bg-black: #000000;
+    --bg-bordo:rgb(102, 35, 35);
+    --bg-red:  #922B21;
+    --bg-pink:  #dc5eb8;
+    --bg-lightrose: #E6B0AA;
+    --bg-grimso:  #D98880;
+    --bg-grimsom: #E6B0AA;
+    --bg-green: #4d9628fb;
+    --bg-yellow: #FDE600;
+    --bg-blue: #3778D5;
+    --bg-lightblue: #89cbdd;
+    --bg-lightyellow: #fff200;
+    --bg-orange: rgb(255, 134, 13);
+    --bg-lightorange:rgb(250, 173, 96);
+    
+    
+}
+.logo-galpon{
+    border-radius: 50%;
+    transition:all 1s ease-in-out;
+}
+.logo-galpon:hover{
+    max-width: 12vw;
+    transform: rotate(360deg);
+    transition:all 1s ease-in-out;
+    margin-top: 45px;
+}
+.log-in:hover{
+    background: linear-gradient(to right, var(--bg-black), transparent);
+    z-index: -1;
+    box-shadow: inset 340px 0 0 0 var(--bg-black);
+    -webkit-transition: all ease 1s;
+    -moz-transition: all ease 1s;
+    transition: all ease 1s;
+    text-transform: uppercase;
+
+} 
+.hero-info span > a:hover{
+    background: linear-gradient(to right, var(--bg-black), transparent);
+    z-index: -1;
+    box-shadow: inset 340px 0 0 0 var(--bg-black);
+    -webkit-transition: all ease 1s;
+    -moz-transition: all ease 1s;
+    transition: all ease 1s;
+    text-transform: uppercase;
+}
+.info-events span{
+    transition: all 0.2s;
+}
+.info-events span:hover{
+    transform: scale(1.5);
+}
+.info-card{
+    transition: all 0.2s;
+}
+.info-card:hover{
+    box-shadow: 4px 2px 10px 2px var(--bg-blacki);
+    transform: scale(1.1);
+}
+.event:hover {
+    background: var(--bg-lightorange);
+    border-radius: 5px;
+    font-style: italic;
+}
+.link-contact:hover{
+    background: linear-gradient(to right, var(--bg-black), transparent);
+    box-shadow: inset 340px 0 0 0 var(--bg-lightwhite);
+    color: var(--bg-black);
+    -webkit-transition: all ease 1s;
+    -moz-transition: all ease 1s;
+    transition: all ease 1s;
+    text-transform: uppercase;
+}
+.siguiente{
+    transition: all 0.2s;
+}
+.siguiente:hover{
+    color: var(--bg-black);
+    transform: scale(1.2);
+}
+.footer-links a:hover{
+    text-decoration: underline;
+}
+.logo-galpon-footer:hover{
+    max-width: 40vw;
+    transform: rotate3d(1, 1, 1, 360deg);
+    transition:all 1s ease-in-out;
+}
