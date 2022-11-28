@@ -370,6 +370,9 @@
     #discover{
         padding: 0;
     }
+    footer{
+        margin-bottom: 0;
+    }
     .footer-about-us{
         display: flex;
         flex-direction: column;

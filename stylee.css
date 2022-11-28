@@ -17,7 +17,7 @@
     --bg-green: #4d9628fb;
     --bg-yellow: #FDE600;
     --bg-blue: #3778D5;
-    --bg-lightblue: #89cbdd;
+    --bg-lightblue: #89cbdd;    
     --bg-lightyellow: #fff200;
     --bg-golden: #ad9812;
     --bg-orange: rgb(255, 134, 13);
@@ -400,6 +400,7 @@ footer {
     align-items: center;
     gap: 5vw;
     width: 100%;
+    margin-bottom: 0;
 }
 .footer-about-us{
     display: flex;
