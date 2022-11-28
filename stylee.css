@@ -97,7 +97,13 @@ header {
     border-radius: 5px;
     padding: .6vw;
     display: block;
-    }
+}
+#menu-toggle , .menu-label{
+    display: none;
+}
+.menu-label:checked{
+    background: var(--bg-blacki);
+}
 main{
     background: var(--bg-orange);
     display: flex;
