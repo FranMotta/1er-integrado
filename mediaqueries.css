@@ -29,14 +29,22 @@
     list-style-type: none;
 }
 @media (max-width: 992px){
+    header {
+        backdrop-filter: none;
+        width: 100%;
+        max-width: 956px;
+    }
+    
     .navbar{
-        gap: .5vw;
+        gap: 24px;
+        width: 100%;
+        margin-right: 18px;
     }
     .navbar-list{
         position: absolute;
         top: 0vw;
         width: 55%;
-        right: 2.5vw;
+        right: 45%;
         left: 38vw;
         background: var(--bg-blacki);
         border: 2px solid var(--bg-black);
@@ -51,21 +59,23 @@
         flex-direction: column;
     }
     .navbar-list a{
-        font-size: 2.5vw;
+        font-size: 20px;
     }
     .menu-label{
         display: flex;
         cursor: pointer;
     }
     .menu-label img{
-        max-width: 4vw;
-        margin-right: 1.5vw;
+        max-width: 100px;
     }
     #menu-toggle:checked + .navbar-list {
         display: flex;
     }
     #hero{
         margin-top: 15vw;
+    }
+    main{
+        width: 100%;
     }
     .hero-info{
         width: 100%;
@@ -193,7 +203,7 @@
         justify-content: center;
         align-items: center;
         text-align: center;
-        font-size: 2vw;
+        font-size: 16px;
     }
     
     #log-in-hero{
@@ -206,7 +216,7 @@
         background: linear-gradient(to right, var(--bg-orange), var(--bg-black));
         color: var(--bg-silver);
         border-radius: 5px;
-        font-size: 2vw;
+        font-size: 16px;
         font-weight: 800;
         padding: 2.5vw;
         display: flex;
@@ -223,14 +233,14 @@
         text-transform: uppercase;
     }
     .button-hero a{
-        font-size: 2vw;
+        font-size: 18px;
         font-weight: 800;
         color: var(--bg-silver);
     }
     .staff{
-        font-size: 1.2vw;
+        font-size: 14px;
         color: var(--bg-black);
-        font-weight: 500;
+        font-weight: 600;
         font-style: italic;
     }
     
@@ -252,6 +262,7 @@
     }
     .navbar:checked{
         background: var(--bg-blacki);
+        backdrop-filter: blur(15px);
 
     }
     .navbar-list{
@@ -273,7 +284,7 @@
         flex-direction: column;
     }
     .navbar-list a{
-        font-size: 3.5vw;
+        font-size: 18px;
     }
     .menu-label{
         display: flex;
@@ -300,6 +311,9 @@
         transition: all ease 1s;
         text-transform: uppercase;
     } 
+    main{
+        width: 100%;
+    }
     .maps-google{
         display: none;
         max-width: 23vw;
@@ -311,6 +325,10 @@
         padding: 3vw;
     }
 /* pag-log-in*/
+    #session{
+        margin-top: 9.3vw;
+
+    }
     .log-in-session{
         display: flex;
         text-align: center;
@@ -360,6 +378,9 @@
     }
     #menu-toggle:checked + .navbar-list {
         display: flex;
+    }
+    main{
+        width: 100%;
     }
     #hero{
         padding: 5vw;

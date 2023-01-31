@@ -43,7 +43,8 @@ header {
     align-content: center;
     align-items: center;
     height: 15vh;
-    padding: 0 0 0 .6vh;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 14px 0px 8px;
     position: fixed;
     top: 0;
     z-index: 1;
@@ -57,7 +58,7 @@ header {
 }
 .navbar-logo span{
     color: var(--bg-silver);
-    font-size: 2vw;
+    font-size: 30px;
     font-weight: 800;
     display: flex;
     justify-content: center;
@@ -88,7 +89,7 @@ header {
 
 .navbar-list a{
     color: var(--bg-silver);
-    font-size: 1vw;
+    font-size: 14px;
     font-weight: 500;
 }
 .log-in{
@@ -113,6 +114,9 @@ main{
     color: var(--bg-silver);
     width: 100%;
 }
+section{
+    max-width: 100%;
+}
 #hero{
     margin-top: 9.3vw;
     width: 100%;
@@ -131,7 +135,7 @@ main{
     flex-wrap: wrap;
 }
 .hero-info h1{
-    font-size: 9vw;
+    font-size: 80px;
     width: 100%;
     font-weight: 800;
     cursor: default;
@@ -139,7 +143,7 @@ main{
     font-family: 'DM Serif Display', serif;
 }
 .hero-info p{
-    font-size: 1.5vw;
+    font-size: 18px;
     font-weight: 900;
     width: 80%;
     color: var(--bg-letter);
@@ -149,7 +153,7 @@ main{
     background: linear-gradient(to right, var(--bg-orange), var(--bg-black));
     color: var(--bg-silver);
     border-radius: 5px;
-    font-size: 2vw;
+    font-size: 18px;
     font-weight: 800;
     padding: 2.5vw;
     display: flex;
@@ -180,24 +184,24 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100vw;
+    width: 10z0vw;
     gap: 3vw;
     flex-direction: column;
 }
 .info-events h2{
     color: var(--bg-black);
-    font-size: 2.5vw;
+    font-size: 30px;
     font-weight: 800;
     cursor: default;
 }
 .info-events p{
     color: var(--bg-black);
-    font-size: 1.5vw;
+    font-size: 16px;
     font-weight: 900;
     cursor: default;
 }
 .info-events span {
-    font-size: 2vw;
+    font-size: 20px;
     font-weight: 900;
     color: var(--bg-black);
     cursor: default;
@@ -244,21 +248,22 @@ main{
     justify-content: center;
     flex-direction: column;
     padding: 6vw;
+    gap: 10px;
 }
 .discover-text h2{
-    font-size: 2.5vw;
+    font-size: 24px;
     font-weight: 800;
     color: var(--bg-black);
     cursor: default;
 }
 .discover-text p{
-    font-size: 1.5vw;
+    font-size: 18px;
     font-weight: 800;
     color: var(--bg-black);
     cursor: default;
 }
 .discover-text p > strong{
-    font-size: 1.8vw;
+    font-size: 18px;
     font-weight: 600;
     color: var(--bg-golden);
     background: var(--bg-bordo);
@@ -280,16 +285,16 @@ main{
     list-style: none;
 }
 .event h2{
-    font-size: 2.5vw;
+    font-size: 22px;
     font-weight: 800;
     color: var(--bg-black);
     cursor: default;
 
 }
 .event li{
-    font-size: 1.5vw;
+    font-size: 16px;
     font-weight: 600;
-    gap: 0.4vw;
+    gap: 1.4vw;
     color: var(--bg-black);
     cursor: default;
 }
@@ -312,7 +317,7 @@ main{
     width: 80vw;
 }
 .contact-text{
-    font-size: 2vw;
+    font-size: 18px;
     font-weight: 400;
     color: var(--bg-black);
     cursor: default;
@@ -332,7 +337,7 @@ main{
 }
 
 .icon-contact a {
-    font-size: 1.5vw;
+    font-size: 18px;
     font-weight: 900;
     color: var(--bg-silver);
     display: flex;
@@ -360,17 +365,17 @@ main{
     align-items: flex-start;
 }
 .direction h2{
-    font-size: 2.5vw;
+    font-size: 18px;
     font-weight: 800;
     color: var(--bg-lightwhite);
 }
 .direction p>strong{
-    font-size: 2vw;
+    font-size: 16px;
     font-weight: 500;
     color: var(--bg-lightwhite);
 }
 .direction p{
-    font-size: 1.6vw;
+    font-size: 14px;
     font-weight: 500;
     color: var(--bg-lightwhite)
 }
@@ -426,7 +431,7 @@ footer {
     align-items: flex-start;
 }
 .mail-text h3 {
-    font-size: 2vw;
+    font-size: 20px;
     font-weight: 800;
 }
 .mail-text form{
@@ -434,14 +439,14 @@ footer {
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-    font-size: 1vw;
+    font-size: 18px;
 }
 .mail-text form >input{
-    font-size: 1.5vw;
+    font-size: 16px;
     font-weight: 300;
 }
 .mail-text form > p{
-    font-size: 1.5vw;
+    font-size: 14px;
     font-weight: 600;
 }
 .mail-text form > input{
@@ -455,15 +460,15 @@ footer {
     flex-direction: column;
 }
 .comunication h3{
-    font-size: 1.5vw;
+    font-size: 16px;
     font-weight: 800;    
 }
 .comunication p{
-    font-size: 1.3vw;
+    font-size: 14px;
     font-weight: 300;
 }
 .comunication span {
-    font-size: 1.5vw;
+    font-size: 16px;
     font-weight: 300;
 }
 .footer-links {
@@ -479,7 +484,7 @@ footer {
     gap: 1vw;
 }
 .footer-links li > a{
-    font-size: 1.3vw;
+    font-size: 14px;
     font-weight: 300;
     color: var(--bg-silver);
 }
@@ -487,7 +492,7 @@ footer {
     max-width: 4vw;
 }
 .support li > a{
-    font-size: 1vw;
+    font-size: 14px;
     font-weight: 400;
 }
 .footer-copyright {
@@ -497,7 +502,7 @@ footer {
     flex-direction: column; 
 }
 .footer-copyright p,a {
-    font-size: 0.7vw;
+    font-size: 12px;
     font-weight: 300;
     color: var(--bg-gray);
 }
@@ -510,6 +515,7 @@ footer {
     justify-content: center;
     background: linear-gradient(to bottom, var(--bg-black), var(--bg-orange));
     width: 100%;
+    margin-top: 9.3vw;
 }
 .log-in-session {
     display: flex;
@@ -534,7 +540,7 @@ footer {
     color: var(--bg-letter);
     gap: 1.5vw;
     padding: 1.5vw 2.5vw;
-    font-size: 1.5vw;
+    font-size: 16px;
     font-weight: 600;
     border: none;
     border-radius: 5px;
@@ -547,7 +553,7 @@ footer {
     color: var(--bg-letter);
     gap: 1.5vw;
     padding: 1.5vw 2.5vw;
-    font-size: 1.5vw;
+    font-size: 16px;
     font-weight: 600;
     border: none;
     border-radius: 5px;
@@ -565,11 +571,11 @@ footer {
     border-radius: 5px;
     border: solid 1px var(--bg-gray);
     padding: 1.7vw 8.7vw;
-    font-size: 1.5vw;
+    font-size: 16px;
     font-weight: 500;
 }
 .siguiente {
-    font-size: 1.7vw;
+    font-size: 20px;
     font-weight: 300;
     color: var(--bg-black);
     justify-content: center;
@@ -577,7 +583,7 @@ footer {
 
 }
 .olv-psw {
-    font-size: 1.2vw;
+    font-size: 14px;
     font-weight: 300;
     color: var(--bg-black);
     justify-content: center;
