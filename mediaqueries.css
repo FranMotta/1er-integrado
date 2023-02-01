@@ -21,18 +21,16 @@
     
 }
 * {
-    margin: 0;
-    padding: 0;
     box-sizing: border-box;
     font-family: 'Noto Serif JP', serif;
     text-decoration: none;
     list-style-type: none;
 }
+
 @media (max-width: 992px){
     header {
         backdrop-filter: none;
         width: 100%;
-        max-width: 956px;
     }
     
     .navbar{
@@ -86,9 +84,8 @@
         padding-top: 5vw;
     }
     .hero-info h1{
-        width: 90%;
-        max-width: 60vw;
-        overflow-wrap: break-word;
+        font-weight: 800;
+        font-size: 70px;
     }
     .hero-info p{
         width: 60%;
@@ -251,11 +248,15 @@
 }
 
 @media (max-width: 700px){
+    body {
+        margin: 0px;
+    }
     header{
         display: flex;
         background: linear-gradient(to bottom, var(--bg-black), transparent);
         backdrop-filter: none;
         height: 15vw;
+        margin: 0px;
     }
     .navbar-logo {
         display: none;
@@ -334,16 +335,22 @@
         text-align: center;
     }
 }
-@media (max-width: 300px){
+@media (max-width: 440px){
+    body {
+        margin: 0px;
+    }
     header{
-        margin-top: 0;
+        margin: 0px;
         padding: 3vw 1vw;
         display: flex;
         background: linear-gradient(to bottom, var(--bg-black), transparent 30%);
         backdrop-filter: none;
     }
     .navbar{
-        margin: 0px 10px;
+        margin: 0px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
     }
     .navbar-logo {
         display: none;
@@ -385,22 +392,70 @@
     #hero{
         padding: 5vw;
     }
+    .hero-info span > a{
+        font-size: 15px
+    }
+    .button-hero a{
+        font-size: 15px;
+    }
+    .hero-info h1 {
+        font-weight: 800;
+        font-size: 30px;
+    }
+    .hero-info p{
+        font-size: 14px;
+        font-weight: 800;
+    }
     .info-events-cards{
         display:none;
+    }
+    .info-events h2{
+        font-size: 18px;
     }
     #discover{
         padding: 0;
     }
+    .link-contact img{
+        width: 20px;
+    }
     footer{
         margin-bottom: 0;
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .logo-galpon-footer{
+        display: none;
+    }
+    .mail-text form > input {
+        width: 80px;
+        height: 25px;
+        font-size: 8px;
+    }
+    .footer-links{
+        display: flex;
+        justify-content: flex-start;
+    }
+    .support{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .icons-footer {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 1vw;
+        flex-wrap: nowrap;
     }
     .footer-about-us{
         display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        gap:2vw
-    }
+        width: 100%;
+        gap: 3vw;
+        flex-wrap: nowrap;
+        flex-direction: column;}
+
     .mail-footer{
         flex-direction: column;
     }

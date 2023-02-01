@@ -26,14 +26,14 @@
     
 }
 * {
-    margin: 0;
-    padding: 0;
     box-sizing: border-box;
     font-family: 'Noto Serif JP', serif;
     text-decoration: none;
     list-style-type: none;
 }
-
+body{
+    margin: 0px;
+}
 header {
     background: linear-gradient(to bottom, var(--bg-black), transparent);
     backdrop-filter: blur(15px);
@@ -475,7 +475,7 @@ footer {
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
-    gap: .6vw   ;
+    gap: .6vw;
 }
 .icons-footer{
     display: flex;
@@ -489,7 +489,12 @@ footer {
     color: var(--bg-silver);
 }
 .footer-links li > a > img{
-    max-width: 4vw;
+    max-width: 10vw;
+}
+.support{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .support li > a{
     font-size: 14px;
