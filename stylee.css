@@ -383,18 +383,19 @@ section{
 .map-google {
     width: 36vw;
     height: 50vh;
-
 }
 /* FOOTER */
 footer {
     background: linear-gradient(to top, var(--bg-letter), var(--bg-black));
     border-top: solid 1px var(--bg-letter);
+    border-bottom: solid 2px var(--bg-letter);
     color: var(--bg-silver);
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
     gap: 5vw;  
-    padding: 5vw 1.2vw 2vw ;
+    padding: 5vw 1.2vw 2vw;
+    margin-bottom: 0px;
     width: 100%;
     flex-wrap: wrap;
 } 
