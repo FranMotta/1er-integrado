@@ -324,7 +324,7 @@ section{
 
 }
 .contacts img{
-    width: 2vw;
+    width: 3vw;
 }
 .icon-contact {
     display: flex;  
@@ -450,7 +450,7 @@ footer {
     font-weight: 600;
 }
 .mail-text form > input{
-    width: 20vw;
+    width: 30vw;
     height: 3vw;
 }
 .comunication{
@@ -474,6 +474,7 @@ footer {
 .footer-links {
     display: flex;
     justify-content: flex-start;
+    align-self: center;
     flex-direction: column;
     gap: .6vw;
 }
@@ -493,8 +494,10 @@ footer {
 }
 .support{
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
+    flex-direction: column;
+
 }
 .support li > a{
     font-size: 14px;
@@ -510,8 +513,9 @@ footer {
     font-size: 12px;
     font-weight: 300;
     color: var(--bg-gray);
+    margin: 0px;
+    gap:8px;
 }
-
 
 /* #pag-log-in */
 #session {
