@@ -1,8 +1,9 @@
 :root {
-    --bg-white:  #FDFEFE;
+    --bg-white:  #fffffe;
     --bg-lightwhite: #F0F3F4;
     --bg-silver: #C0C0C0;
     --bg-gray:  #808080;
+    --bg-lightgray: #808080b2;
     --bg-letter: #312F2F;
     --bg-blacki:#0f0f0f;
     --bg-black: #000000;
@@ -14,13 +15,14 @@
     --bg-grimsom: #E6B0AA;
     --bg-green: #4d9628fb;
     --bg-yellow: #FDE600;
-    --bg-blue: #3778D5;
-    --bg-lightblue: #89cbdd;
+    --bg-blue: #0f0e17;
+    --bg-lightblue: #262845;    
     --bg-lightyellow: #fff200;
-    --bg-orange: rgb(255, 134, 13);
+    --bg-golden: #a75a02;
+    --bg-orange: #ff8906;
     --bg-lightorange:rgb(250, 173, 96);
-    
-    
+    --bg-purple: #a7a9be;
+    --bg-violet: #2e2f3e;      
 }
 .logo-galpon{
     border-radius: 50%;
@@ -65,7 +67,7 @@
     transform: scale(1.1);
 }
 .event:hover {
-    background: var(--bg-lightorange);
+    background: var(--bg-lightblue);
     border-radius: 5px;
     font-style: italic;
 }

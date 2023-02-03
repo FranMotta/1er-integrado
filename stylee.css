@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP&family=Poppins:ital@1&family=Roboto+Condensed:ital@1&display=swap');
 :root {
-    --bg-white:  #FDFEFE;
+    --bg-white:  #fffffe;
     --bg-lightwhite: #F0F3F4;
     --bg-silver: #C0C0C0;
     --bg-gray:  #808080;
@@ -16,12 +16,14 @@
     --bg-grimsom: #E6B0AA;
     --bg-green: #4d9628fb;
     --bg-yellow: #FDE600;
-    --bg-blue: #3778D5;
-    --bg-lightblue: #89cbdd;    
+    --bg-blue: #0f0e17;
+    --bg-lightblue: #262845;    
     --bg-lightyellow: #fff200;
-    --bg-golden: #ad9812;
-    --bg-orange: rgb(255, 134, 13);
+    --bg-golden: #a75a02;
+    --bg-orange: #ff8906;
     --bg-lightorange:rgb(250, 173, 96);
+    --bg-purple: #a7a9be;
+    --bg-violet: #2e2f3e;
     
     
 }
@@ -35,7 +37,7 @@ body{
     margin: 0px;
 }
 header {
-    background: linear-gradient(to bottom, var(--bg-black), transparent);
+    background: var(--bg-blue);
     backdrop-filter: blur(15px);
     width: 100%;
     display: flex;
@@ -57,7 +59,7 @@ header {
     gap: 2.5vw;
 }
 .navbar-logo span{
-    color: var(--bg-silver);
+    color: var(--bg-white);
     font-size: 30px;
     font-weight: 800;
     display: flex;
@@ -88,13 +90,13 @@ header {
 }
 
 .navbar-list a{
-    color: var(--bg-silver);
+    color: var(--bg-white);
     font-size: 14px;
     font-weight: 500;
 }
 .log-in{
-    background: linear-gradient(to right, transparent, var(--bg-black));
-    color: var(--bg-silver);
+    background: linear-gradient(to right, transparent, var(--bg-orange));
+    color: var(--bg-white);
     border-radius: 5px;
     padding: .6vw;
     display: block;
@@ -103,15 +105,14 @@ header {
     display: none;
 }
 .menu-label:checked{
-    background: var(--bg-blacki);
+    background: var(--bg-blue);
 }
 main{
-    background: var(--bg-orange);
+    background: var(--bg-blue);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    color: var(--bg-silver);
     width: 100%;
 }
 section{
@@ -125,36 +126,43 @@ section{
     justify-content: center;
     flex-flow: column row;
 }
+.hero-data {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+}
 .hero-info {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     flex-direction: column;
-    gap: 4vw;
-    width: 70%;
+    width: 100%;
     flex-wrap: wrap;
+    padding: 25px;
 }
 .hero-info h1{
     font-size: 80px;
     width: 100%;
     font-weight: 800;
     cursor: default;
-    color: var(--bg-black);
+    color: var(--bg-white);
     font-family: 'DM Serif Display', serif;
 }
 .hero-info p{
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 900;
-    width: 80%;
-    color: var(--bg-letter);
+    color: var(--bg-purple);
     cursor: default;
+    
 }
 .hero-info span > a{
-    background: linear-gradient(to right, var(--bg-orange), var(--bg-black));
-    color: var(--bg-silver);
+    background: var(--bg-orange);
+    color: var(--bg-white);
     border-radius: 5px;
-    font-size: 18px;
-    font-weight: 800;
+    font-size: 20px;
+    font-weight: 900;
     padding: 2.5vw;
     display: flex;
     align-items: center;
@@ -164,56 +172,57 @@ section{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-radius: 3.1vw;
-    padding: .3vw 1.2vw;
-    max-width: 40vw;
+    border-radius: 8px;
+    padding: 6vw 1.2vw;
+    max-width: 50vw;
     width: 100%;
 }
-#log-in-hero{
+.log-in-hero{
     display: none;
 }
 #info {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    padding: 4vw;
+    flex-direction: column;
+    padding:  10px 50px;
     width: 100%;
-    background-color: var(--bg-orange);
+    background-color: var(--bg-lightwhite);
 }
 .info-events{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 10z0vw;
-    gap: 3vw;
     flex-direction: column;
+    width: 100%;
+    padding: 0 10px;
+    gap: 3vw;
 }
 .info-events h2{
-    color: var(--bg-black);
-    font-size: 30px;
+    color: var(--bg-blue);
+    font-size: 50px;
     font-weight: 800;
     cursor: default;
 }
 .info-events p{
-    color: var(--bg-black);
-    font-size: 16px;
-    font-weight: 900;
+    color: var(--bg-blue);
+    font-size: 20px;
+    font-weight: 500;
     cursor: default;
 }
 .info-events span {
-    font-size: 20px;
+    font-size: 30px;
     font-weight: 900;
-    color: var(--bg-black);
+    color: var(--bg-orange);
     cursor: default;
 }
 .info-events-cards{
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
-    gap: 3vw;
-    max-width: 110vw;
-    flex-wrap: wrap;
+    gap: 15px;
+    max-width: 90vw;
+    flex-direction: row;
 
 }
 .info-card {
@@ -222,14 +231,14 @@ section{
     align-items: center;
     flex-direction: column;
     gap: 1vw;
-    background: var(--bg-blacki);
-    color: var(--bg-silver);
-    border-radius: 15px;
-    border: solid .3vw var(--bg-blacki);
+    background: var(--bg-blue);
+    color: var(--bg-white);
+    border-radius: 5px;
+    border: solid 4px var(--bg-blue);
     cursor: default;
 }
 .info-card img{
-    border-radius: 15px;
+    border-radius: 5px;
     max-width: 25vw;
     max-height: 37vh;
     width: 100%;
@@ -237,89 +246,95 @@ section{
 #discover{
     display: flex;
     justify-content: center;
-    background: var(--bg-orange);
+    background: var(--bg-blue);
     width: 100%;
     flex-direction: column;
-    padding: 50px;
+    padding: 10px 50px;
 }
 .discover-text{
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    padding: 6vw;
     gap: 10px;
 }
 .discover-text h2{
-    font-size: 24px;
-    font-weight: 800;
-    color: var(--bg-black);
+    font-size: 50px;
+    font-weight: 900;
+    color: var(--bg-white);
     cursor: default;
 }
 .discover-text p{
-    font-size: 18px;
-    font-weight: 800;
-    color: var(--bg-black);
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--bg-purple);
     cursor: default;
 }
 .discover-text p > strong{
     font-size: 18px;
-    font-weight: 600;
-    color: var(--bg-golden);
-    background: var(--bg-bordo);
+    font-weight: 800;
+    color: var(--bg-violet);
+    background: var(--bg-purple);
     border-radius: 5px;
     padding: .3vw;
 }
 .list-events {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
     padding: 0 1.5vw;
 }
 .event {
     display: flex;
     flex-direction: column;
-    gap: .5vw;
     justify-content: center;
     align-self: flex-start;
     list-style: none;
+    padding: 0 15px;
 }
 .event h2{
-    font-size: 22px;
+    font-size: 30px;
     font-weight: 800;
-    color: var(--bg-black);
+    color: var(--bg-purple);
     cursor: default;
 
 }
 .event li{
-    font-size: 16px;
-    font-weight: 600;
+    font-size: 20px;
+    font-weight: 500;
     gap: 1.4vw;
-    color: var(--bg-black);
+    color: var(--bg-purple);
     cursor: default;
 }
 
 #contact {
     display: flex;
     justify-content: center;
-    align-items: center;
-    background: var(--bg-orange);
+    align-items: flex-start;
+    background: var(--bg-blue);
     width: 100%;
-    padding: 12vw;
+    padding: 10px 50px;
+    flex-direction: row-reverse;
 }
 .contacts {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     flex-direction: column;
-    padding: 5vw;
-    gap: 3vw;
-    width: 80vw;
+    gap: 5px;
+    width: 100%;
+}
+.contact-text-link{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    padding: 0px 43px;
 }
 .contact-text{
-    font-size: 18px;
-    font-weight: 400;
-    color: var(--bg-black);
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--bg-purple);
     cursor: default;
 
 }
@@ -339,7 +354,7 @@ section{
 .icon-contact a {
     font-size: 18px;
     font-weight: 900;
-    color: var(--bg-silver);
+    color: var(--bg-purple);
     display: flex;
     align-items: center;
     gap: 1vw;
@@ -350,13 +365,12 @@ section{
 .contact-us {
     display: flex;
     justify-content: flex-end;
-    align-items: center;
-    background: var(--bg-blacki);
+    align-items: flex-start;
+    background: linear-gradient(to bottom, var(--bg-black), var(--bg-blue));
     flex-direction: column;
-    padding: 4vw;
+    padding: 15px;
     border-radius: 5px;
-    width: 100%;
-    max-width: 87vw;
+    max-width: 100%;
 }
 .direction {
     display: flex;
@@ -365,29 +379,29 @@ section{
     align-items: flex-start;
 }
 .direction h2{
-    font-size: 18px;
+    font-size: 30px;
     font-weight: 800;
-    color: var(--bg-lightwhite);
+    color: var(--bg-purple);
 }
 .direction p>strong{
-    font-size: 16px;
+    font-size: 20px;
     font-weight: 500;
-    color: var(--bg-lightwhite);
+    color: var(--bg-purple);
 }
 .direction p{
-    font-size: 14px;
+    font-size: 18px;
     font-weight: 500;
-    color: var(--bg-lightwhite)
+    color: var(--bg-purple)
 }
 
 .map-google {
     width: 36vw;
-    height: 50vh;
+    height: 30vh;
 }
 /* FOOTER */
 footer {
-    background: linear-gradient(to top, var(--bg-letter), var(--bg-black));
-    border-top: solid 1px var(--bg-letter);
+    background: linear-gradient(to bottom, var(--bg-blue), var(--bg-lightblue));
+    /* border-top: solid 1px var(--bg-letter); */
     border-bottom: solid 2px var(--bg-letter);
     color: var(--bg-silver);
     display: flex;
@@ -418,11 +432,12 @@ footer {
 .mail-footer {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
+    flex-direction: column;
     gap: 1.2vw;
 }
 .mail-footer img{
-    width: 10vw;
+    width: 110px;
     border-radius: 50%;
 }
 .mail-text{
@@ -577,9 +592,9 @@ footer {
 }
 .mail {
     background: transparent;
-    color: var(--bg-black);
+    color: var(--bg-purple);
     border-radius: 5px;
-    border: solid 1px var(--bg-gray);
+    border: solid 1px var(--bg-white);
     padding: 1.7vw 8.7vw;
     font-size: 16px;
     font-weight: 500;

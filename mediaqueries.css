@@ -1,7 +1,11 @@
 :root {
-    --bg-white:  #FDFEFE;
+    --bg-white:  #fffffe;
     --bg-lightwhite: #F0F3F4;
     --bg-silver: #C0C0C0;
+    --bg-gray:  #808080;
+    --bg-lightgray: #808080b2;
+    --bg-letter: #312F2F;
+    --bg-blacki:#0f0f0f;
     --bg-black: #000000;
     --bg-bordo:rgb(102, 35, 35);
     --bg-red:  #922B21;
@@ -11,14 +15,14 @@
     --bg-grimsom: #E6B0AA;
     --bg-green: #4d9628fb;
     --bg-yellow: #FDE600;
-    --bg-blue: #3778D5;
-    --bg-lightblue: #89cbdd;
+    --bg-blue: #0f0e17;
+    --bg-lightblue: #262845;    
     --bg-lightyellow: #fff200;
-    --bg-golden: #ad9812;
-    --bg-orange: rgb(255, 134, 13);
+    --bg-golden: #a75a02;
+    --bg-orange: #ff8906;
     --bg-lightorange:rgb(250, 173, 96);
-    
-    
+    --bg-purple: #a7a9be;
+    --bg-violet: #2e2f3e;
 }
 * {
     box-sizing: border-box;
@@ -31,8 +35,11 @@
     header {
         backdrop-filter: none;
         width: 100%;
+        margin-top: 0px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
-    
     .navbar{
         gap: 24px;
         width: 100%;
@@ -40,10 +47,10 @@
     }
     .navbar-list{
         position: absolute;
-        top: 7vw;
+        top: 68px;
         width: 55%;
         right: 45%;
-        left: 42vw;
+        left: 310px;
         background: var(--bg-blacki);
         border: 2px solid var(--bg-black);
         border-radius: 30px 5px 30px 5px;
@@ -69,30 +76,37 @@
     #menu-toggle:checked + .navbar-list {
         display: flex;
     }
-    #hero{
-        margin-top: 15vw;
-    }
     main{
         width: 100%;
     }
+    #hero{
+        margin-top: 40px;
+
+    }
+    #hero img, div{
+        margin-top: 0vw;
+    }
     .hero-info{
         width: 100%;
+        display: flex;
         text-align: center;
         justify-content: center;
         align-items: center;
-        gap:3.5vw;
+        gap: 4px;
         padding-top: 5vw;
     }
     .hero-info h1{
         font-weight: 800;
         font-size: 70px;
+        height: 70px;
     }
     .hero-info p{
         width: 60%;
         max-width: 70vw;
     }
     .img-hero{
-        display: none;
+        display: flex;
+        width: 55vw;
     }
     .log-in:hover{
         font-weight: 800;
@@ -150,7 +164,18 @@
         align-items: center;
         text-align: center;
         flex-direction: column;
-        gap: 1.5vw;
+        gap: 20px;
+    }
+    .contacts{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .contact-text-link{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
     .contact-text{
         display: flex;
@@ -163,9 +188,7 @@
         display: flex;
         justify-content: flex-end;
         align-items: center;
-        flex-direction: column;
-        width: 100%;
-        max-width: 700px;
+        flex-direction: row;
     }
     .contacts img{
         width: 5vw;
@@ -175,14 +198,11 @@
         flex-direction: column;
         justify-content: center;
         text-align: start;
-        flex-wrap: wrap;
-        width: 100%;
-        max-width: 62.5vw;
         overflow-wrap: break-word;
+        align-items: flex-start;
     }
     .map-google{
-        width: 80%;
-        max-width: 600px;
+        width: 90%;
     }
     footer{
         display: flex;
@@ -233,18 +253,18 @@
         font-size: 16px;
     }
     
-    #log-in-hero{
+    .log-in-hero{
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
     .button-hero{
-        background: linear-gradient(to right, var(--bg-orange), var(--bg-black));
-        color: var(--bg-silver);
+        background: var(--bg-orange);
+        color: var(--bg-white);
         border-radius: 5px;
-        font-size: 16px;
-        font-weight: 800;
+        font-size: 20px;
+        font-weight: 900;
         padding: 2.5vw;
         display: flex;
         align-items: center;
@@ -260,15 +280,22 @@
         text-transform: uppercase;
     }
     .button-hero a{
-        font-size: 18px;
-        font-weight: 800;
-        color: var(--bg-silver);
+        font-size: 20px;
+        font-weight: 900;
+        color: var(--bg-white);
     }
-    .staff{
+    .staff {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .staff p{
         font-size: 14px;
-        color: var(--bg-black);
+        color: var(--bg-purple);
         font-weight: 600;
         font-style: italic;
+        overflow-wrap: normal;
+        width: 100%;
     }
 }
 
@@ -284,7 +311,7 @@
         margin: 0px;
     }
     .navbar-logo {
-        display: none;
+        display: flex;
     }
     .navbar:checked{
         background: var(--bg-blacki);
@@ -324,7 +351,13 @@
         display: flex;
     }
     #hero{
-        margin-top: 15vw
+        margin-top: 35px;
+    }
+    .hero-info{
+        padding: 0px;
+    }
+    .hero-info h1{
+        height: 30px;
     }
     .log-in:hover{
         font-weight: 800;
@@ -340,15 +373,30 @@
     main{
         width: 100%;
     }
-    .maps-google{
-        display: none;
-        max-width: 23vw;
+    .hero-data{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    #hero img{
+        padding: 0px;
+        border-radius: 5px;
     }
     #discover{
         padding: 3vw;
     }
     #contact{
         padding: 3vw;
+    }
+    .contact-us {
+        display: flex;
+    }
+    .maps-google{
+        width: 100%;
+    }
+    .footer-about-us{
+        gap: 9px;
     }
     .logo-galpon-footer{
         width: 15vw;
@@ -365,7 +413,7 @@
         justify-content: center;
     }
     .support li>p{
-        font-size: 12px;
+        font-size: 10px;
     }
 /* pag-log-in*/
     #session{
@@ -377,7 +425,7 @@
         text-align: center;
     }
 }
-@media (max-width: 440px){
+@media (max-width: 442px){
     body {
         margin: 0px;
     }
@@ -434,6 +482,12 @@
     #hero{
         padding: 5vw;
     }
+    #hero img{
+        min-width: 60vw;
+    }
+    .hero-info{
+        gap: 6px;
+    }
     .hero-info span > a{
         font-size: 15px
     }
@@ -442,23 +496,57 @@
     }
     .hero-info h1 {
         font-weight: 800;
-        font-size: 30px;
+        font-size: 50px;
+        height: 60px;
     }
     .hero-info p{
         font-size: 14px;
         font-weight: 800;
+        width: 100%;
     }
     .info-events-cards{
-        display:none;
+        display: flex;
+        flex-direction: column;
+    }
+    .info-events-cards img{
+        max-width: 55vw;
     }
     .info-events h2{
-        font-size: 18px;
+        font-size: 30px;
+    }
+    .info-events p{
+        font-size: 16px;
+        width: 100%;
+    }
+    .info-events span{
+        font-size: 20px;
     }
     #discover{
         padding: 0;
     }
+    .discover-text h2{
+        font-size: 30px;
+        width: 100%;
+    }
+    .disconver-text p{
+        width: 100%;
+    }
+    .event h2{
+        font-size: 25px;
+    }
+    .contact-text h2{
+        font-size: 25px;
+    }
     .link-contact img{
         width: 20px;
+    }
+
+    .contact-us{
+        display: flex;
+        flex-direction: column;
+    }
+    .direction h2{
+        font-size: 25px;
     }
     footer{
         margin-bottom: 0;
