@@ -70,6 +70,7 @@ header {
 }
 .logo-galpon{
     max-width: 8.5vw;
+    border-radius: 50%;
 }
 .navbar {
     display: flex;
@@ -96,10 +97,10 @@ header {
     font-weight: 500;
 }
 .log-in{
-    background: linear-gradient(to right, transparent, var(--bg-orange));
+    background: var(--bg-red);
     color: var(--bg-white);
     border-radius: 5px;
-    padding: .6vw;
+    padding: 5px;
     display: block;
 }
 #menu-toggle , .menu-label{
@@ -355,7 +356,7 @@ section{
 .icon-contact a {
     font-size: 18px;
     font-weight: 900;
-    color: var(--bg-purple);
+    color: var(--bg-white);
     display: flex;
     align-items: center;
     gap: 1vw;
@@ -555,9 +556,9 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(to bottom, var(--bg-white), var(--bg-blue));
+    background: var(--bg-blue);
     width: 100%;
-    margin: 120px 0 50px 0;
+    margin: 45px 0 50px 0;
 }
 .navbar-logo-login{
     display: flex;
@@ -583,7 +584,7 @@ footer {
     padding: 6vw 1vw;
     box-shadow:  7.5vw 2vw 25vw var(--bg-black);
     border-radius: 10px;
-    background: transparent;
+    background: linear-gradient(to bottom, var(--bg-lightblue), var(--bg-purple));
 }
 .icon-red {
     max-width: 1.5vw;
@@ -622,10 +623,10 @@ footer {
     flex-direction: column;
 }
 .mail {
-    background: transparent;
-    color: var(--bg-black);
+    background: var(--bg-lightblue);
+    color: var(--bg-white);
     border-radius: 5px;
-    border: solid 1px var(--bg-white);
+    border: solid 1px var(--bg-black);
     padding: 1.7vw 8.7vw;
     font-size: 20px;
     font-weight: 500;
@@ -641,7 +642,7 @@ footer {
 .olv-psw {
     font-size: 14px;
     font-weight: 300;
-    color: var(--bg-silver);
+    color: var(--bg-black);
     justify-content: center;
     align-items: center;
 }

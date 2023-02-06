@@ -24,25 +24,9 @@
     --bg-purple: #a7a9be;
     --bg-violet: #2e2f3e;      
 }
-.logo-galpon{
-    border-radius: 50%;
-    transition:all 1s ease-in-out;
-}
-.logo-galpon:hover{
-    max-width: 12vw;
-    transform: rotate(360deg);
-    transition:all 1s ease-in-out;
-    margin-top: 45px;
-}
 .log-in:hover{
-    background: linear-gradient(to right, var(--bg-white), transparent);
-    z-index: -1;
-    box-shadow: inset 340px 0 0 0 var(--bg-red);
-    -webkit-transition: all ease 1s;
-    -moz-transition: all ease 1s;
-    transition: all ease 1s;
-    text-transform: uppercase;
-
+    box-shadow: 4px 2px 10px 2px var(--bg-blacki);
+    transform: scale(1.1);
 } 
 .hero-info span > a:hover{
     background: linear-gradient(to right, var(--bg-white), transparent);
@@ -73,8 +57,8 @@
 }
 .link-contact:hover{
     background: linear-gradient(to right, var(--bg-black), transparent);
-    box-shadow: inset 340px 0 0 0 var(--bg-lightwhite);
-    color: var(--bg-black);
+    box-shadow: inset 340px 0 0 0 var(--bg-lightblue);
+    color: var(--bg-white);
     -webkit-transition: all ease 1s;
     -moz-transition: all ease 1s;
     transition: all ease 1s;
