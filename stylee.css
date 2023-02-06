@@ -458,9 +458,10 @@ footer {
     justify-content: center;
     font-size: 18px;
 }
-.mail-text form >input{
+.mail-text form > input{
     font-size: 16px;
     font-weight: 300;
+    color: var(--bg-white);
 }
 .mail-text form > p{
     font-size: 14px;
