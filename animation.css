@@ -35,9 +35,9 @@
     margin-top: 45px;
 }
 .log-in:hover{
-    background: linear-gradient(to right, var(--bg-black), transparent);
+    background: linear-gradient(to right, var(--bg-white), transparent);
     z-index: -1;
-    box-shadow: inset 340px 0 0 0 var(--bg-black);
+    box-shadow: inset 340px 0 0 0 var(--bg-red);
     -webkit-transition: all ease 1s;
     -moz-transition: all ease 1s;
     transition: all ease 1s;
@@ -45,9 +45,9 @@
 
 } 
 .hero-info span > a:hover{
-    background: linear-gradient(to right, var(--bg-black), transparent);
+    background: linear-gradient(to right, var(--bg-white), transparent);
     z-index: -1;
-    box-shadow: inset 340px 0 0 0 var(--bg-black);
+    box-shadow: inset 340px 0 0 0 var(--bg-red);
     -webkit-transition: all ease 1s;
     -moz-transition: all ease 1s;
     transition: all ease 1s;

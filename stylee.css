@@ -52,11 +52,12 @@ header {
     z-index: 1;
     overflow: visible;
 }
-.navbar-logo {
+.navbar-logo{
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     gap: 2.5vw;
+    width: 100%;
 }
 .navbar-logo span{
     color: var(--bg-white);
@@ -534,13 +535,42 @@ footer {
 }
 
 /* #pag-log-in */
+#header-login{
+    background: var(--bg-blue);
+    backdrop-filter: blur(15px);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 15vh;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 14px 0px 8px;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    overflow: visible;
+}
 #session {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(to bottom, var(--bg-black), var(--bg-orange));
+    background: linear-gradient(to bottom, var(--bg-white), var(--bg-blue));
     width: 100%;
-    margin-top: 9.3vw;
+    margin: 120px 0 50px 0;
+}
+.navbar-logo-login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.navbar-logo-login span{
+    font-size: 40px;
+    font-weight: 800;
+    color: var(--bg-white);
+}
+.logo-galpon {
+    max-width: 130px;
 }
 .log-in-session {
     display: flex;
@@ -567,7 +597,7 @@ footer {
     padding: 1.5vw 2.5vw;
     font-size: 16px;
     font-weight: 600;
-    border: none;
+    border: .5px solid var(--bg-black);
     border-radius: 5px;
 }
 .log-in-apple {
@@ -580,7 +610,7 @@ footer {
     padding: 1.5vw 2.5vw;
     font-size: 16px;
     font-weight: 600;
-    border: none;
+    border:.5px solid var(--bg-black);
     border-radius: 5px;
 }
 .mail-password {
@@ -592,15 +622,15 @@ footer {
 }
 .mail {
     background: transparent;
-    color: var(--bg-purple);
+    color: var(--bg-black);
     border-radius: 5px;
     border: solid 1px var(--bg-white);
     padding: 1.7vw 8.7vw;
-    font-size: 16px;
+    font-size: 20px;
     font-weight: 500;
 }
 .siguiente {
-    font-size: 20px;
+    font-size: 30px;
     font-weight: 300;
     color: var(--bg-black);
     justify-content: center;
@@ -610,7 +640,7 @@ footer {
 .olv-psw {
     font-size: 14px;
     font-weight: 300;
-    color: var(--bg-black);
+    color: var(--bg-silver);
     justify-content: center;
     align-items: center;
 }
